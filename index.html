@@ -8,6 +8,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="d-flex justify-content-end">
@@ -19,10 +20,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+              <a class="nav-link" href="imageSearch.html">Image Search</a>
+              <a class="nav-link" href="advancedSearch.html">Advanced Seach</a>
+              <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
             </div>
           </div>
         </div>
@@ -35,10 +36,10 @@
         <div class="col-lg-6">
           <form action="https://www.google.com/search">
             <div class="mb-3">
-              <input type="text" name="q" class="form-control" placeholder="Search"/>
+              <input type="text"  class="form-control rounded-pill" name="q" class="form-control" placeholder="Search"/>
             </div>
             <div class="mb-3">
-              <input type="submit" value="Google Search" class="btn btn-primary"/>
+              <input type="submit" value="Google Search" class="btn btn-primary position-absolute top-10 start-50 translate-middle "/>
             </div>
           </form>
         </div>
