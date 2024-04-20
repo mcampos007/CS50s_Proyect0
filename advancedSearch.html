@@ -29,8 +29,8 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-              <a class="nav-link" href="index.html">Home</a>
-              <a class="nav-link" href="imageSearch.html">Image Seach</a>
+              <a class="nav-link" href="index.html">Google Search</a>
+              <!-- <a class="nav-link" href="imageSearch.html">Image Seach</a> -->
               <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
             </div>
           </div>
@@ -42,35 +42,70 @@
       <div class="card-header text-danger">Búsqueda avanzada</div>
       <div class="card-body">
         <div class="row justify-content-center mt-3">
-          <div class="col-lg-6">
+          <div class="col-lg-10">
             <form action="https://www.google.com/search">
               <p>Mostrar páginas que contengan...</p>
 
               <div class="mb-3 row">
-                <label for="allword" class="col-sm-2 col-form-label"
-                  >Todas estas palabras:</label
+                <label for="as_q" class="col-sm-2 col-form-label"
+                  >all these words:</label
                 >
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="allword" />
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="as_q"
+                    name="as_q"
+                  />
                 </div>
               </div>
 
               <div class="mb-3 row">
-                <label for="fraseexacta" class="col-sm-2 col-form-label"
-                  >esta palabra o frase exactas:</label
+                <label for="as_epq" class="col-sm-2 col-form-label"
+                  >this exact word or phrase:</label
                 >
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="fraseexacta" />
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="as_epq"
+                    name="as_epq"
+                  />
                 </div>
               </div>
 
               <div class="mb-3 row">
-                <label for="anyword" class="col-sm-2 col-form-label"
-                  >cualquiera de estas palabras:</label
+                <label for="as_oq" class="col-sm-2 col-form-label"
+                  >any of these words:</label
                 >
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="anyword" />
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="as_oq"
+                    name="as_oq"
+                  />
                 </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="as_eq" class="col-sm-2 col-form-label"
+                  >none of these words::</label
+                >
+                <div class="col-sm-8">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="as_eq"
+                    name="as_eq"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <input
+                  type="submit"
+                  value="Google Search"
+                  class="btn btn-primary position-absolute top-10 start-50 translate-middle"
+                />
               </div>
             </form>
           </div>
